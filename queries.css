@@ -1,0 +1,39 @@
+@media (max-width: 60em) {
+  .user-container {
+    width: 30rem;
+    left: 10rem;
+    top: 3rem;
+  }
+
+  #input-transit {
+    width: max-content;
+  }
+}
+
+@media (max-width: 40em) {
+  .user-container {
+    width: 30rem;
+    left: 2rem;
+    top: 5rem;
+  }
+
+  .app-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 32em) {
+  .user-container {
+    width: 30rem;
+    left: 1rem;
+    top: 6rem;
+  }
+
+  .app-title {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    font-size: 1rem;
+  }
+}

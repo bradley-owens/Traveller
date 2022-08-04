@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Roboto+Slab:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MAPS -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script type="module" src="script.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0TPVHne5DbgXOLejsrTl2tTknx1K4ANY&libraries=places&callback=initMap"
+    ></script>
+
+    <title>Traveller</title>
+  </head>
+  <body>
+    <div class="application-container">
+      <div class="user-container">
+        <h1 class="app-title">Traveler</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="place-search-start"
+            class="input"
+            value="current location"
+            placeholder="From..."
+          />
+          <input
+            type="text"
+            id="place-search-destination"
+            class="input"
+            placeholder="To..."
+          />
+
+          <button class="submit">Go</button>
+        </div>
+
+        <div class="transit-choice-container">
+          <select id="input-transit" class="input">
+            <option value="" disabled selected>What mode of travel?</option>
+            <option value="WALKING">Walking</option>
+            <option value="DRIVING">Driving</option>
+            <option value="TRANSIT">Public Transport</option>
+            <option value="BICYCLING">Bicycle</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="output">
+        <p class="start"></p>
+        <p class="end"></p>
+        <p class="distance"></p>
+        <p class="duration"></p>
+      </div>
+      <div id="map"></div>
+    </div>
+  </body>
+</html>
