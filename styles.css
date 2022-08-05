@@ -17,38 +17,40 @@ body {
   top: 1rem;
   left: 15rem;
   z-index: 999;
-  width: 40rem;
-  padding: 2rem 1rem;
+  width: 50%;
+  height: 12rem;
+  padding: 1rem;
   align-items: center;
   justify-items: center;
-  border-radius: 10rem;
+  border-radius: 3rem;
   box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.616);
+  border: 1px solid rgba(0, 0, 255, 0.722);
 }
 
 /* for route info */
 
 .active {
   background-color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: bold;
   position: absolute;
-  top: 60rem;
-  left: 10rem;
+  top: 38rem;
+  left: -8rem;
   z-index: 999;
   max-width: max-content;
-  padding: 2rem 3rem;
+  padding: 1.5rem 2.5rem;
   align-items: flex-start;
   justify-items: center;
-  border-radius: 10rem;
+  border-radius: 4rem;
+  border: 1px solid rgba(0, 0, 255, 0.722);
   box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.616);
   transform: translateX(10rem);
   transition: 0.5s;
 }
 
 .app-title {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   text-decoration: 2px solid underline;
-  margin-top: -15px;
   text-align: center;
 }
 
@@ -56,11 +58,11 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .input {
-  font-size: 1.3rem;
+  font-size: 1rem;
   padding: 0.3rem;
   width: 40%;
   background: none;
@@ -79,7 +81,7 @@ body {
 }
 
 .submit {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 0.5rem;
   border-radius: 1rem;
   cursor: pointer;
