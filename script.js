@@ -130,3 +130,4 @@ getDirectionsBtn.addEventListener("click", function () {
     }
   });
 });
+

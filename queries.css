@@ -1,8 +1,13 @@
-@media (max-width: 60em) {
+@media (max-width: 90em) {
   .user-container {
     width: 30rem;
     left: 10rem;
     top: 3rem;
+  }
+
+  .active {
+    top: 20rem;
+    left: -8rem;
   }
 
   #input-transit {
@@ -30,7 +35,7 @@
   }
 
   .app-title {
-    font-size: 1.5rem;
+    font-size: 10rem;
   }
 
   .input {
